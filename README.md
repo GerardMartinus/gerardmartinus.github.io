@@ -1,2 +1,2 @@
 # gerardmartinus.github.io
-Currículo do Jornada Dev
+Currículo da Maratona Jornada Dev
