@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,16 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.name{
+:root{
+    --right-title: #70C6C7;
+    --sub-title: #FDB44B;
+}
+
+body{
+    background: linear-gradient(90deg, rgb(40, 0 , 35) 40%, rgb(2, 0 , 35) 100%)
+}
+
+.name {
     text-align: center;
 }
 
@@ -18,99 +27,136 @@
     grid-template-columns: repeat(7, 1fr);
 }
 
-.left-section{
+.left-section {
     grid-column: span 2;
     height: 100%;
-    background-color: #999999;
+    background-color: #00204A;
+
+    color: #fdb44b;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    align-items: center;
 }
 
-.right-section{
+.right-section {
     grid-column: span 5;
     height: 100%;
-    background-color: #424a50;
+    background-color: #4B6982;
     border-radius: 0 60px 0 0;
 }
 
-.left-section-contents{
+.left-section-contents {
     padding: 2rem 2rem;
 }
 
-.profile{
+.profile {
     width: 100%;
     border-bottom: 2px solid #eeeeee;
 }
 
-.profile .profile-image{
+.profile .profile-image {
     padding: 20px;
     width: 100%;
-    border-radius: 100%;   
+    border-radius: 15%;
 }
 
-.name{
+.name {
     color: #d6d8df;
-    font-size: 30px;
+    font-size: 25px;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-.profession{
-    color: #eeeeee;
-    font-size: 20px;
+.profession {
+    color: var(--sub-title);
+    font-size: 15px;
     text-transform: uppercase;
     text-align: center;
+    padding: 1rem;
 }
 
-.left-section{
-    color: #eeeeee;
-    font-size: 20px;
-}
-
-.contact-info ul{
+.contact-info ul {
     padding-top: 1.5rem;
+    padding-left: 0.5rem;
+
 }
 
 .contact-info ul li,
-.references ul li{
+.references ul li {
     padding: .4rem 0;
-    color: #eeeeee;
+    display: flex;
+    align-items: center;
+    color: #d6dbdfaf;
+    letter-spacing: 1px;
+    font-size: 15px;
 }
 
 .contact-info ul li i,
-.references ul li i{
-    padding-right: 1rem;
+.references ul li i {
+    padding: 0 1rem 0 1rem;
     font-size: 18px;
     color: #eeeeee;
 }
 
-.skills ul{
+a{
+    text-decoration: none;
+    color:  #d6dbdfaf;
+}
+
+.skills ul {
     padding-top: 1.5rem;
+    padding-left: 0.5rem;
 }
 
-.skills ul li p{
+.skills ul li p {
     padding: .4rem 0;
-    color: #eeeeee;
+    color: #d6dbdfaf;
+    font-size: 18px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
 }
 
-.right-section-contents{
+
+
+
+.right-section-contents {
     padding: 2rem 2rem;
 }
 
-.right-title{
-    color: #eeeeee;
+.right-title {
+    color: var(--right-title);
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    position: relative;
 }
 
-.gap{
+.left-title{
+    padding: 1rem 0 0 0.5rem;
+}
+
+.gap {
     padding-bottom: 2rem;
 }
 
-.about-me-contents{
+.about-me-contents {
     font-size: 18px;
-    color: #eeeeee;
+    letter-spacing: 1px;
+    line-height: 2rem;
+    color: #f1f8fd;
 }
 
 .experience-contents,
 .education-contents,
-.awards-contents{
+.awards-contents {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 2rem;
@@ -119,26 +165,37 @@
 
 .exp-company-name,
 .education-school-name,
-.awards-company-name{
+.awards-company-name {
     font-size: 25px;
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #FDB44B;
+    padding-bottom: .4rem;
 }
 
 .exp-time-period,
 .education-time-period,
-.award-time-period{
+.award-time-period {
     font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 2rem;
 }
 
 .exp-position,
 .education-subject,
-.awards-name{
+.awards-name {
     font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #FDB44B;
+    padding-bottom: .4rem;
 }
 
 .exp-desc,
 .education-desc,
-.awards-desc{
+.awards-desc {
     font-size: 16px;
     padding-left: 5px;
 }
